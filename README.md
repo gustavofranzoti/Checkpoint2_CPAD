@@ -35,20 +35,4 @@ npx expo start
 
 O código principal do app está em `src/app/index.tsx`.
 
-## Prints do app
 
-### 1. Lista vazia, ao abrir o app
-
-![Lista vazia](prints/1-lista-vazia.png)
-
-### 2. Lista depois de adicionar 1 item
-
-![Lista com 1 item](prints/2-um-item.png)
-
-### 3. Lista depois de adicionar 5 itens
-
-![Lista com 5 itens](prints/3-cinco-itens.png)
-
-## Autor
-
-Gustavo Franzoti
