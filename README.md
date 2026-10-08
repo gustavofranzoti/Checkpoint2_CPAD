@@ -1,56 +1,54 @@
-# Welcome to your Expo app 👋
+# Lista de Compras – CheckPoint 2
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo em React Native (Expo) que demonstra a combinação do componente `FlatList` com o hook `useState`.
 
-## Get started
+## Funcionalidades
 
-1. Install dependencies
+- Título do app ("Lista de Compras")
+- Campo de texto (`TextInput`) para digitar um novo item
+- Botão **Adicionar**, que insere o item na lista usando `useState`, **sem `.push()`** (é criado um novo array com `[...lista, novoItem]`)
+- Lista exibida com `FlatList`
 
-   ```bash
-   npm install
-   ```
+## Tecnologias
 
-2. Start the app
+- React Native
+- Expo (Expo Router)
+- TypeScript
 
-   ```bash
-   npx expo start
-   ```
+## Como rodar o projeto
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Instale as dependências:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Inicie o servidor:
 
-### Other setup steps
+```bash
+npx expo start
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+3. Abra o app:
+   - No celular, escaneie o QR Code com o app **Expo Go**; ou
+   - No navegador, pressione `w` no terminal.
 
-## Learn more
+O código principal do app está em `src/app/index.tsx`.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Prints do app
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 1. Lista vazia, ao abrir o app
 
-## Join the community
+![Lista vazia](prints/1-lista-vazia.png)
 
-Join our community of developers creating universal apps.
+### 2. Lista depois de adicionar 1 item
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![Lista com 1 item](prints/2-um-item.png)
+
+### 3. Lista depois de adicionar 5 itens
+
+![Lista com 5 itens](prints/3-cinco-itens.png)
+
+## Autor
+
+Gustavo Franzoti
