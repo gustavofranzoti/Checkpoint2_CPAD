@@ -49,6 +49,4 @@ O código principal do app está em `src/app/index.js`.
 
 ![Lista com 5 itens](prints/3-cinco-itens.png)
 
-## Autor
 
-Gustavo Franzoti
